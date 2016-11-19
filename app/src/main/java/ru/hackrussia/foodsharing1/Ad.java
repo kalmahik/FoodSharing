@@ -38,14 +38,6 @@ public class Ad extends RealmObject{
     }
 
 
-    public String getLastMessage() {
-        return description;
-    }
-
-    public void setLastMessage(String lastMessage) {
-        this.description = lastMessage;
-    }
-
     public long getCreated() {
         return created;
     }

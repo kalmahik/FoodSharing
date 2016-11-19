@@ -29,16 +29,15 @@ public class CategoryListActivity extends AppCompatActivity {
     private List<Category> categories;
     private FloatingActionButton fab;
     private List<Ad> ads;
-    private Ad[] ada;
 
 
     private OnListItemClickListener clickListener = new OnListItemClickListener() {
         @Override
         public void onClick(View v, int position) {
             doSignUp();
-            Intent intent = new Intent(CategoryListActivity.this, CategoryListActivity.class);
-            intent.putExtra("title", categories.get(position).getTitle());
-            startActivity(intent);
+//            Intent intent = new Intent(CategoryListActivity.this, CategoryListActivity.class);
+//            intent.putExtra("title", categories.get(position).getTitle());
+//            startActivity(intent);
         }
     };
 
@@ -106,12 +105,10 @@ public class CategoryListActivity extends AppCompatActivity {
                 try {
                     Response response = client.newCall(request).execute();
                     Gson gson = new Gson();
-                    //ada = gson.fromJson(response.body().string(), Ad[].class);
-                    //AuthResponse ar = gson.fromJson(rc.getPayload().toString(), AuthResponse.class);
-                    //Log.d(LoginActivity.class.getSimpleName(), ar.getUser().getName());
-                    //Log.d(CategoryListActivity.class.getSimpleName(), ada[0].toString());
+                    Ad[] ada = gson.fromJson(response.body().string(), Ad[].class);
+                    Log.d(CategoryListActivity.class.getSimpleName(), ada[0].getTitle());
 
-                    Log.d(CategoryListActivity.class.getSimpleName(), response.body().string());
+                    //Log.d(CategoryListActivity.class.getSimpleName(), response.body().string());
 
                 } catch (IOException e) {
                     Log.e(CategoryListActivity.class.getSimpleName(), Log.getStackTraceString(e));

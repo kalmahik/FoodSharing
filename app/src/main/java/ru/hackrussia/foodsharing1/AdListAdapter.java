@@ -49,7 +49,6 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
 
         public void bind(Ad ad) {
             title.setText(ad.getTitle());
-            description.setText(ad.getLastMessage());
             created.setText("2016");
             itemView.setOnClickListener(this);
         }
