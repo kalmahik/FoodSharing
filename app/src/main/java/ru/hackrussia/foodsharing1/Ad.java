@@ -7,18 +7,22 @@ public class Ad extends RealmObject{
     @PrimaryKey
     private String id;
     private String title;
-    private String description;
-    private long created;
+    private String cat_id;
+    private String desc;
+    private String date;
+    private String img;
 
     public Ad() {
 
     }
 
-    public Ad(String id, String title, String description, long created) {
+    public Ad(String title, String id, String desc, String cat_id, String date, String img) {
         this.id = id;
         this.title = title;
-        this.description = description;
-        this.created = created;
+        this.desc = desc;
+        this.date = date;
+        this.cat_id = cat_id;
+        this.img = img;
     }
 
     public String getId() {
@@ -37,14 +41,35 @@ public class Ad extends RealmObject{
         this.title = title;
     }
 
-
-    public long getCreated() {
-        return created;
+    public String getCat_id() {
+        return cat_id;
     }
 
-    public void setCreated(long created) {
-        this.created = created;
+    public void setCat_id(String cat_id) {
+        this.cat_id = cat_id;
     }
 
+    public String getDesc() {
+        return desc;
+    }
 
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
 }

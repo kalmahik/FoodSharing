@@ -1,10 +1,14 @@
 package ru.hackrussia.foodsharing1;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -34,14 +38,16 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        TextView image;
+        ImageView image;
         TextView title;
         TextView description;
         TextView created;
+        private Context context;
+
 
         public ViewHolder(View itemView) {
             super(itemView);
-            image = (TextView) itemView.findViewById(R.id.image);
+            image = (ImageView) itemView.findViewById(R.id.image);
             title = (TextView) itemView.findViewById(R.id.title);
             description = (TextView) itemView.findViewById(R.id.description);
             created = (TextView) itemView.findViewById(R.id.created);
@@ -49,7 +55,21 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
 
         public void bind(Ad ad) {
             title.setText(ad.getTitle());
-            created.setText("2016");
+            created.setText(ad.getDate());
+            description.setText(ad.getDesc());
+
+            if (ad.getImg().equals("soup"))
+            image.setImageResource(R.drawable.soup); else
+
+            if (ad.getImg().equals("teas"))
+                image.setImageResource(R.drawable.teas);
+
+            if (ad.getImg().equals("breads"))
+                image.setImageResource(R.drawable.breads);
+
+
+
+
             itemView.setOnClickListener(this);
         }
 

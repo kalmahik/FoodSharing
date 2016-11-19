@@ -3,14 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="72dp"
+    android:layout_height="150dp"
     android:orientation="horizontal">
 
-    <TextView
+    <ImageView
         android:id="@+id/image"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_margin="8dp"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:layout_margin="16dp"
         android:gravity="center"
         android:background="@color/colorAccent"
         />
@@ -29,13 +29,14 @@
     <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@+id/title"
         android:layout_marginTop="0dp"
         android:layout_toRightOf="@+id/image"
         android:textColor="@android:color/darker_gray"
         android:textSize="17sp"
-        tools:text="Description" />
+        tools:text="Description"
+        android:layout_alignBottom="@+id/image" />
 
     <TextView
         android:id="@+id/created"
@@ -51,5 +52,5 @@
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="72dp"/>
+        />
 </RelativeLayout>

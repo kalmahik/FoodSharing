@@ -44,46 +44,42 @@ public class CategoryListAdapter extends RecyclerView.Adapter<CategoryListAdapte
             title = (TextView) itemView.findViewById(R.id.title);
         }
 
-        public void bind(Category ad) {
-            title.setText(ad.getTitle());
+        public void bind(Category category) {
+            title.setText(category.getTitle());
             itemView.setOnClickListener(this);
 
-            if (ad.getTitle().equals("Хлебобулочные изделия"))
+            if (category.getId().equals("96"))
             image.setImageResource(R.drawable.bread); else
 
-            if (ad.getTitle().equals("Кондитерские изделия"))
+            if (category.getId().equals("97"))
                 image.setImageResource(R.drawable.candy); else
 
-            if (ad.getTitle().equals("Напитки"))
+            if (category.getId().equals("99"))
                 image.setImageResource(R.drawable.drinks); else
 
-            if (ad.getTitle().equals("Замороженные продукты"))
+            if (category.getId().equals("100"))
                 image.setImageResource(R.drawable.frozen); else
 
-            if (ad.getTitle().equals("Бакалея"))
+            if (category.getId().equals("102"))
                 image.setImageResource(R.drawable.grocery); else
 
-            if (ad.getTitle().equals("Молочные продукты"))
+            if (category.getId().equals("98"))
                 image.setImageResource(R.drawable.milk); else
 
-            if (ad.getTitle().equals("Консервы"))
+            if (category.getId().equals("106"))
                 image.setImageResource(R.drawable.tins); else
 
-            if (ad.getTitle().equals("Соусы"))
+            if (category.getId().equals("103"))
                 image.setImageResource(R.drawable.sauce); else
 
-            if (ad.getTitle().equals("Полуфабрикаты"))
-                image.setImageResource(R.drawable.ready); else
-
-            if (ad.getTitle().equals("Фрукты и овощи"))
+            if (category.getId().equals("101"))
                 image.setImageResource(R.drawable.fruits); else
 
-            if (ad.getTitle().equals("Чай и кофе"))
+            if (category.getId().equals("105"))
                 image.setImageResource(R.drawable.tea); else
 
-            if (ad.getTitle().equals("Прочее"))
+            if (category.getId().equals("104"))
                 image.setImageResource(R.drawable.something);
-
         }
 
         @Override

@@ -36,7 +36,7 @@ public class AdDatabase {
     }
 
     public List<Ad> getAll() {
-        return realm.where(Ad.class).findAllSorted("created", Sort.DESCENDING);
+        return realm.where(Ad.class).findAll();
     }
 
     public void close() {
