@@ -53,7 +53,7 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus {outline: non
 }
 textarea {height: 200px;
 }
-.form-group label, .meta label, .meta, .row label {font-weight: 700;text-transform: capitalize;
+.form-group label, .meta label, .meta, .row label {font-weight: 700;
 }
 .meta_list .meta .cf_date_interval {width: 150px;
 }
@@ -127,7 +127,7 @@ textarea {height: 200px;
 }
 /*ttle*/
 
-.title, .block h2, .forgot .form-container-box .header {text-transform: capitalize;font-size: 15px;margin-bottom: 25px;padding-bottom: 12px;position: relative;
+.title, .block h2, .forgot .form-container-box .header {font-size: 15px;margin-bottom: 25px;padding-bottom: 12px;position: relative;
 }
 .titles {margin-top: 25px;
 }
@@ -186,7 +186,7 @@ textarea {height: 200px;
 }
 /*breadcrumb*/
 
-.breadcrumb {margin-bottom: 0;text-transform: capitalize;padding: 10px 0;background: #f5f5f5;font-weight: 700;letter-spacing: 0.25px;border-radius: 0;
+.breadcrumb {margin-bottom: 0;padding: 10px 0;background: #f5f5f5;font-weight: 700;letter-spacing: 0.25px;border-radius: 0;
 }
 .breadcrumb > li + li::before {content: "";margin: 0;padding: 0;display: none;
 }

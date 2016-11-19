@@ -65,7 +65,8 @@ if(View::newInstance()->_exists('listType')){
   </li>
   <?php 
         }
-    } 
+
+}
 ?>
 </ul>
 

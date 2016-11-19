@@ -153,27 +153,7 @@
         <?php osc_run_hook('location'); ?>
       </div>
     </div>
-    <div class="block_list">
-      <div id="useful_info">
-        <h1 class="title">
-          <?php _e('Useful information', OSCLASSWIZARDS_THEME_FOLDER); ?>
-        </h1>
-        <ul>
-          <li>
-            <?php _e('Avoid scams by acting locally or paying with PayPal', OSCLASSWIZARDS_THEME_FOLDER); ?>
-          </li>
-          <li>
-            <?php _e('Never pay with Western Union, Moneygram or other anonymous payment services', OSCLASSWIZARDS_THEME_FOLDER); ?>
-          </li>
-          <li>
-            <?php _e('Don\'t buy or sell outside of your country. Don\'t accept cashier cheques from outside your country', OSCLASSWIZARDS_THEME_FOLDER); ?>
-          </li>
-          <li>
-            <?php _e('This site is never involved in any transaction, and does not handle payments, shipping, guarantee transactions, provide escrow services, or offer "buyer protection" or "seller certification"', OSCLASSWIZARDS_THEME_FOLDER); ?>
-          </li>
-        </ul>
-      </div>
-    </div>
+    
     <?php if( osc_comments_enabled() ) { ?>
     <?php if( osc_reg_user_post_comments () && osc_is_web_user_logged_in() || !osc_reg_user_post_comments() ) { ?>
     <div id="comments">

@@ -19,11 +19,11 @@ msgstr ""
 
 #: 404.php:33
 msgid "Sorry but I can't find the page you're looking for"
-msgstr "Извините, но такая страница не найдена"
+msgstr "Извините, такая страница не найдена"
 
 #: 404.php:37
 msgid "Let us help you, we have got a few tips for you to find it. "
-msgstr "Позвольте нам помочь Вам, у нас есть для вас несколько подсказок"
+msgstr "Позвольте нам помочь, у нас есть для вас несколько подсказок"
 
 #: 404.php:46 admin/templates.php:35 header.php:160
 msgid "Search"
@@ -35,7 +35,7 @@ msgstr "<strong>Посмотрите</strong>  в самых популярны�
 
 #: admin/ads.php:29
 msgid "Ads management"
-msgstr "Управление объявлениями"
+msgstr "Управление фудшерами"
 
 #: admin/ads.php:33
 msgid ""
@@ -526,7 +526,7 @@ msgstr "Подписаться на этот поиск"
 
 #: alert-form.php:82
 msgid "Subscribe now"
-msgstr "Подписаться сейчас"
+msgstr "Подписаться"
 
 #: common/head.php:24 item.php:200 loop-grid.php:67 loop-list.php:73
 #: loop-search-grid.php:72 loop-search-grid.php:130 loop-search-grid.php:183
@@ -596,7 +596,7 @@ msgstr "Язык:"
 #: footer.php:49 header.php:62
 #, php-format
 msgid "Hi %s"
-msgstr "Привет %s"
+msgstr "Привет, %s"
 
 #: footer.php:50 header.php:63
 msgid "My account"
@@ -612,7 +612,7 @@ msgstr "Войти"
 
 #: footer.php:60 header.php:73 item-sidebar.php:46 user-login.php:73
 msgid "Register for a free account"
-msgstr "Зарегистрировать аккаунт бесплатно"
+msgstr "Зарегистрировать аккаунт"
 
 #: footer.php:73 functions.php:445 header.php:95 user-public-sidebar.php:28
 msgid "Contact"
@@ -620,7 +620,7 @@ msgstr "Контакты"
 
 #: footer.php:77 header.php:101
 msgid "Publish your ad for free"
-msgstr "Опубликовать объявление бесплатно "
+msgstr "Новый фудшер"
 
 #: footer.php:82
 #, php-format
@@ -641,15 +641,15 @@ msgstr "Категории"
 
 #: functions.php:318
 msgid "See more listings..."
-msgstr "Посмотреть все объявления"
+msgstr "Посмотреть все фудшеры"
 
 #: functions.php:426 item-post.php:56
 msgid "Publish a listing"
-msgstr "Опубликовать объявление"
+msgstr "Опубликовать фудшер"
 
 #: functions.php:427
 msgid "Edit your listing"
-msgstr "Редактировать объявление"
+msgstr "Редактировать фудшер"
 
 #: functions.php:428 item-send-friend.php:35
 msgid "Send to a friend"
@@ -675,7 +675,7 @@ msgstr "Панель управления"
 #: functions.php:433
 #, php-format
 msgid "%s's profile"
-msgstr "%s's профиль"
+msgstr "%s: профиль"
 
 #: functions.php:434 functions.php:483
 msgid "Account"
@@ -813,7 +813,7 @@ msgstr "Валюта: выберите нужную"
 
 #: functions.php:926
 msgid "Photo: must be png,gif,jpg,jpeg"
-msgstr "Фото: должны быть PNG, GIF, JPG, JPEG"
+msgstr "Фото должны быть PNG, GIF, JPG или JPEG"
 
 #: functions.php:929
 msgid "Name: this field is required"
@@ -897,7 +897,7 @@ msgstr "Цена"
 
 #: item-post.php:125
 msgid "Listing Location"
-msgstr "Местоположение объявления"
+msgstr "Местоположение фудшера"
 
 #: item-post.php:129 search-sidebar.php:58 user-profile.php:88
 msgid "Country"
@@ -921,7 +921,7 @@ msgstr "Адрес"
 
 #: item-post.php:184
 msgid "Seller's information"
-msgstr "Информация продавца"
+msgstr "Информация об участнике"
 
 #: item-post.php:188 user-profile.php:56 user-register.php:45
 msgid "Name"
@@ -933,7 +933,7 @@ msgstr "E-mail"
 
 #: item-post.php:206
 msgid "Show e-mail on the listing page"
-msgstr "Показать электронную почту в объявлении"
+msgstr "Показывать электронную почту в фудшере"
 
 #: item-post.php:228 user-change_email.php:73 user-change_password.php:83
 #: user-change_username.php:119 user-profile.php:146
@@ -962,17 +962,17 @@ msgstr "Тема (опционально)"
 
 #: item-sidebar.php:33
 msgid "The listing is expired. You can't contact the publisher."
-msgstr "Объявление не актуально. Вы не можете связаться с автором."
+msgstr "Объявление более не актуально. Вы не можете связаться с автором."
 
 #: item-sidebar.php:37
 msgid "It's your own listing, you can't contact the publisher."
-msgstr "Это ваше собственное объявление, и вы не можете связаться с автором."
+msgstr "Это ваше собственное объявление => вы не можете связаться с автором."
 
 #: item-sidebar.php:41
 msgid ""
 "You must log in or register a new account in order to contact the advertiser"
 msgstr ""
-"Вы должны войти или зарегистрироваться чтобы связаться с автором объявления"
+"Вы должны войти или зарегистрироваться, чтобы связаться с автором фудшера"
 
 #: item-sidebar.php:60
 #, php-format
@@ -1011,7 +1011,7 @@ msgstr "Помощь"
 #: loop-user-public-grid.php:198 loop-user-public-list.php:73
 #: loop-user-public-list.php:131 loop-user-public-list.php:190 main.php:81
 msgid "Edit item"
-msgstr "Редактировать объявление"
+msgstr "Редактировать фудшер"
 
 #: item.php:77
 #, php-format
@@ -1123,7 +1123,7 @@ msgstr "Пометить как оскорбительное"
 
 #: item.php:316
 msgid "Related listings"
-msgstr "Похожие объявления"
+msgstr "Похожие фудшеры"
 
 #: loop-grid.php:66 loop-list.php:72 loop-search-grid.php:71
 #: loop-search-grid.php:129 loop-search-grid.php:182 loop-search-list.php:73
@@ -1156,19 +1156,19 @@ msgstr "Активировать"
 
 #: main.php:46
 msgid "Premium Listings"
-msgstr "Премиум объявления"
+msgstr "Премиум фудшеры"
 
 #: main.php:108
 msgid "Latest Listings"
-msgstr "Последние объявления"
+msgstr "Последние фудшеры"
 
 #: main.php:114
 msgid "There aren't listings available at this moment"
-msgstr "Объявлений пока нет"
+msgstr "Фудшеров пока нет"
 
 #: main.php:124
 msgid "See all listings"
-msgstr "Посмотреть все объявления"
+msgstr "Посмотреть все фудшеры"
 
 #: main.php:131
 #, php-format
@@ -1227,11 +1227,11 @@ msgstr "Hет результатов, соответствующих \"%s\""
 #: search.php:86
 #, php-format
 msgid "%1$d - %2$d of %3$d listings"
-msgstr "%1$d - %2$d из %3$d объявлений"
+msgstr "%1$d - %2$d из %3$d фудшеров"
 
 #: search.php:123
 msgid "Premium listings"
-msgstr "Премиум объявления"
+msgstr "Премиум фудшеры"
 
 #: search.php:151
 msgid "Other searches that may interest you"
@@ -1304,7 +1304,7 @@ msgstr "Восстановить Ваш пароль"
 
 #: user-items.php:58
 msgid "My listings"
-msgstr "Мои объявления"
+msgstr "Мои фудшеры"
 
 #: user-items.php:62
 msgid "No listings have been added yet"
@@ -1360,7 +1360,7 @@ msgstr "Описание пользователя"
 
 #: user-public-profile.php:101
 msgid "Latest listings"
-msgstr "Последние объявления"
+msgstr "Последние фудшеры"
 
 #: user-recover.php:55
 msgid "Send me a new password"

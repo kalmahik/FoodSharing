@@ -19,15 +19,37 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="<?php echo str_replace('_', '-', osc_current_user_locale()); ?>">
 <head>
 <?php osc_current_web_theme_path('common/head.php') ; ?>
+<style>
+.beautiful{
+z-index: 9999999;
+   border-radius: 15px; 
+   border:2px #e07e27 solid;
+   background:black;
+   background-color: black;
+   width:85px;
+   height:30px;
+   color:white;
+   margin-left:15px;
+}
+.beautiful:hover{
+background-color: #e07e27;
+
+  }
+</style>
+
+
+
 </head>
 
 <body <?php osclasswizards_body_class(); ?>>
 <header id="header">
+  <? /*
   <div class="top_links">
     <div class="container">
       <div class="language">
@@ -95,31 +117,51 @@
           <?php _e('Contact', OSCLASSWIZARDS_THEME_FOLDER); ?>
           </a> </li>
       </ul>
-      <div class="publish">
+      <?php
+      /*<div class="publish">
         <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
         <a class="btn btn-success" href="<?php echo osc_item_post_url_in_category() ; ?>">
         <?php _e('Publish your ad for free', OSCLASSWIZARDS_THEME_FOLDER);?>
         </a>
-        <?php } ?>
+         } */?>
       </div>
     </div>
   </div>
   <?php 
-	if( osc_is_home_page() ) {
 		if(osc_get_preference('show_banner', 'osclasswizards_theme')=='1'){
 			echo '<div id="header_map">';
 			if(homepage_image()) { 
 				echo homepage_image(); 
 			} else {
 			
-				echo '<img src="'.osc_current_web_theme_url('images/banner.jpg').'" />';
+				echo '<img style="cursor:pointer;" onclick="window.location.href=\'http://0a.by\'" src="'.osc_current_web_theme_url('images/banner.jpg').'" />';
 
 			} 
 			echo '</div>';
-		}
 ?>
-  <div class="banner_none" id="form_vh_map">
-    <form action="<?php echo osc_base_url(true); ?>" id="main_search" method="get" class="search nocsrf" >
+  <div style="width:100%;text-align:top;height:40px;background:black;padding:5px;">
+
+<?php if( osc_is_web_user_logged_in() ) { ?>
+        <li> <?php echo sprintf(__('Привет, %s', OSCLASSWIZARDS_THEME_FOLDER), osc_logged_user_name() . '!'); ?> &#10072; <strong><a style="color:gray;" href="<?php echo osc_user_dashboard_url(); ?>">
+          <?php _e('My account', OSCLASSWIZARDS_THEME_FOLDER); ?>
+          </a></strong> <a onhover="color:white" style="color:gray" href="<?php echo osc_user_logout_url(); ?>">
+          <?php _e('Logout', OSCLASSWIZARDS_THEME_FOLDER); ?>
+          </a> 
+           <button class="beautiful" style="margin-right:15px;width:auto;float:right;" id="beautiful" onclick="window.location.href='<?php echo osc_item_post_url_in_category(); ?>'">Добавить новый фудшер
+          </button></li>
+        <?php } else { ?>
+        <?php if(osc_user_registration_enabled()) { ?>
+        <button class="beautiful" id="beautiful" onclick="window.location.href='<?php echo osc_register_account_url(); ?>'">Регистрация
+          </button>
+          <button class="beautiful" style="margin-right:15px;width:auto;float:right;" id="beautiful" onclick="window.location.href='<?php echo osc_item_post_url_in_category(); ?>'">Добавить новый фудшер
+          </button></li>
+                     <?  ?>
+          
+
+        <?php } ?>
+        <?php }  ?>
+  </div>
+    <? /*<form action="<?php echo osc_base_url(true); ?>" id="main_search" method="get" class="search nocsrf" >
       <div class="container">
         <input type="hidden" name="page" value="search"/>
         <div class="main-search">
@@ -165,8 +207,8 @@
           <div id="message-seach"></div>
         </div>
       </div>
-    </form>
-  </div>
+    </form> */ ?>
+ 
   <?php
 	
 	} 
