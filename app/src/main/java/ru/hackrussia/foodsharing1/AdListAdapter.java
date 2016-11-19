@@ -8,8 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
 import java.util.List;
 
 public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder> {
@@ -59,14 +57,21 @@ public class AdListAdapter extends RecyclerView.Adapter<AdListAdapter.ViewHolder
             description.setText(ad.getDesc());
 
             if (ad.getImg().equals("soup"))
-            image.setImageResource(R.drawable.soup); else
-
-            if (ad.getImg().equals("teas"))
+                image.setImageResource(R.drawable.soup);
+            else if (ad.getImg().equals("teas"))
                 image.setImageResource(R.drawable.teas);
-
-            if (ad.getImg().equals("breads"))
+            else if (ad.getImg().equals("breads"))
                 image.setImageResource(R.drawable.breads);
-
+            else if (ad.getImg().equals("sauces"))
+                image.setImageResource(R.drawable.sauces);
+            else if (ad.getImg().equals("pasta"))
+                image.setImageResource(R.drawable.pasta);
+            else if (ad.getImg().equals("candys"))
+                image.setImageResource(R.drawable.candys);
+            else if (ad.getImg().equals("coffee"))
+                image.setImageResource(R.drawable.coffee);
+            else if (ad.getImg().equals("soups2"))
+                image.setImageResource(R.drawable.soups2);
 
 
 

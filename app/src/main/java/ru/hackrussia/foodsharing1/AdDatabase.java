@@ -5,7 +5,6 @@ import java.util.List;
 import io.realm.Realm;
 import io.realm.RealmChangeListener;
 import io.realm.RealmConfiguration;
-import io.realm.Sort;
 
 public class AdDatabase {
     private Realm realm;
